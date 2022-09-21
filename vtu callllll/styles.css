@@ -1,0 +1,46 @@
+.home {
+  padding: 20%;
+  background-color: black;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+span {
+  color: orange;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+a.btn {
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  color: black;
+  margin: auto;
+
+}
+
+a.btn:hover {
+  border-radius: .25rem;
+}
+.button{
+text-align: center;
+}
+.cgpa{
+  text-align: center;
+
+}
+input{
+  padding-right: 30px;
+  margin-bottom: 5%;
+}

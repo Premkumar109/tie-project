@@ -1,0 +1,57 @@
+
+<html>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<title>CGPA</title>
+<body>
+  <link rel="stylesheet" href="styles.css">
+
+  <a class="btn btn-warning" href="index.html">back</a>
+
+  <h1>CGPA Calculator</h1>
+    <div class="cgpa" >
+        <input type="text" id="text1" placeholder="1st sem SGPA">
+        <br>
+        <input type="text" id="text2" placeholder="2nd sem SGPA">
+        <br>
+        <input type="text" id="text3" placeholder="3rd sem SGPA">
+        <br>
+        <input type="text" id="text4" placeholder="4th sem SGPA">
+        <br>
+        <input type="text" id="text5" placeholder="5th sem SGPA">
+        <br>
+        <input type="text" id="text6" placeholder="6th sem SGPA">
+        <br>
+        <input type="text" id="text7" placeholder="7th sem SGPA">
+        <br>
+        <input type="text" id="text8" placeholder="8th sem SGPA">
+        <br>
+        <input class="btn btn-warning" type="button" value="Calculate CGPA" onclick="addNumber()"> <br>
+        Result : <br>
+        <input type="text" placeholder="result" id="res">
+        <br>
+
+    </div>
+
+        <script>
+
+            function addNumber(){
+                var first_sem = parseInt(document.getElementById("text1").value);
+                var sec_sem = parseInt(document.getElementById("text2").value);
+                var  third_sem = parseInt(document.getElementById("text3").value);
+                var fourth_sem = parseInt(document.getElementById("text4").value);
+                var fifth_sem = parseInt(document.getElementById("text5").value);
+                var sixth_sem = parseInt(document.getElementById("text6").value);
+                var seventh_sem = parseInt(document.getElementById("text7").value);
+                var eith_sem = parseInt(document.getElementById("text8").value);
+
+                var sum = first_sem + sec_sem + third_sem + fourth_sem + fifth_sem + sixth_sem + seventh_sem + eith_sem;
+                var avg = sum/8;
+                document.getElementById("res").value = avg;
+
+            }
+        </script>
+    </body>
+</html>
